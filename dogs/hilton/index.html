@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="Stylesheet" href="./../../gallery.css">
+	<meta charset="utf-8">
+	<title>Strona Główna</title>
+</head> 
+ 
+<body>
+<div class="header">
+    <a href="./../../home.html" class="logo"><img src="./../../form/logo.png" alt="logo"></a>
+        <div class="header-right">
+            <a href="./../../home.html">HOME</a>
+            <a href="./../../psy.html">PSY</a>
+            <a href="./../../koty.html">KOTY</a>
+            <a href="./../../adoptowane.html">ADOPTOWANE</a>
+            <a href="./../../zasadyadopcji.html">ZASADY ADOPCJI</a>
+            <a href="./../../kontakt.html">KONTAKT</a>
+        </div>
+    </div>
+   
+    <br>
+    
+    <div class="slideshow-container">
+        
+    <div class="mySlides fade">
+        <div class="number">1/4</div>
+        <img src="hilton1.jpg" style=width: 100%>
+    </div>
+    
+     <div class="mySlides fade">
+        <div class="number">2/4</div>
+        <img src="hilton2.jpg" style=width: 100%>
+    </div>
+        
+    <div class="mySlides fade">
+        <div class="number">3/4</div>
+        <img src="hilton3.jpg" style=width: 100%>
+    </div>
+        
+    <div class="mySlides fade">
+        <div class="number">4/4</div>
+        <img src="hilton4.jpg" style=width: 100%>
+    </div>
+    
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    
+    <script>
+    
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n)
+        {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n)
+        {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n)
+        {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dots");
+            if(n>slides.length)
+                {
+                    slideIndex = 1;
+                }
+            if(n<1)
+                {
+                    slideIndex = slides.length;
+                }
+            for(i=0;i<slides.length; i++)
+                {
+                    slides[i].style.display="none";
+                }
+            for(i=0; i < dots.length; i++)
+                {
+                    dots[i].className = dots[i].className.replace("active", "");
+                }
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += "active";
+        }
+        
+    </script>
+    
+    <div class="info">
+        <p class="bold"><b>HILTON</b></p><br>
+        <p class="story">
+            Hilton trafił do schroniska jako delikatny, wrażliwy i trochę lękliwy piesek, który od początku szukał wsparcia w człowieku. Prawdopodobnie przeszkadzał to dostawał kopniaka albo rzucano w niego kamieniami. Dlatego niepokoją go trochę gwałtowne ruchy i obawia się mężczyzn - zdecydowanie bardziej ufa kobietom. Toleruje inne psy i ładnie spaceruje w stadzie, choć relacje z nimi w jego wykonaniu są dość złożone - zdarza się, że psy upatrują go sobie jako ofiarę wyczuwając prawdopodobnie jego słabości i pierwsze go atakują. Dlatego też Hilton czuje się najlepiej ze znajomymi ludźmi bądź ze stabilnymi psami - innych zwyczajnie unika. Na akcji w mieście zachowuje się wzorowo. Ładnie podróżuje autem i dzielnie znosi wizyty u weterynarza, choć trzeba przyznać, że każde nowe miejsce go bardzo stresuje, sprawia, że staje się trochę nadpobudliwy i nie może usiedzieć.Hilton na pewno potrzebuje trochę czasu, żeby oswoić się z nowymi doświadczeniami i sytuacjami.
+            <br>
+            Szukamy dla Hiltona domu spokojnego i cierpliwego, w którym będzie miał czas na oswojenie z nowym otoczeniem. Najlepiej, gdyby opiekunem Hiltona była kobieta. Ze względu na to, w jakiej przestrzeni Hilton przebywał dotychczas, najlepiej czułby się w większym mieszkaniu lub domu z ogrodem w spokojnej okolicy, w którym będzie miał swój azyl. Powinien być raczej psim jedynakiem. Nie polecamy go do domu z dziećmi, ponieważ ich energia mogłaby być dla Hiltona niekomfortowa.
+        </p>
+    </div>
+    <br><br>
+    <div class="przycisk">
+        <a class="button" href="./../../zasadyadopcji.html">ADOPTUJ!</a>
+    </div>
+   <br>
+    </body>
+</html>

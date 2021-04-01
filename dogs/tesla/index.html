@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="Stylesheet" href="./../../gallery.css">
+	<meta charset="utf-8">
+	<title>Strona Główna</title>
+</head> 
+ 
+<body>
+<div class="header">
+    <a href="./../../home.html" class="logo"><img src="./../../form/logo.png" alt="logo"></a>
+        <div class="header-right">
+            <a href="./../../home.html">HOME</a>
+            <a href="./../../psy.html">PSY</a>
+            <a href="./../../koty.html">KOTY</a>
+            <a href="./../../adoptowane.html">ADOPTOWANE</a>
+            <a href="./../../zasadyadopcji.html">ZASADY ADOPCJI</a>
+            <a href="./../../kontakt.html">KONTAKT</a>
+        </div>
+    </div>
+   
+    <br>
+    
+    <div class="slideshow-container">
+        
+    <div class="mySlides fade">
+        <div class="number">1/4</div>
+        <img src="180104134021.jpg" style=width: 100%>
+    </div>
+    
+     <div class="mySlides fade">
+        <div class="number">2/4</div>
+        <img src="180116115831.jpg" style=width: 100%>
+    </div>
+        
+    <div class="mySlides fade">
+        <div class="number">3/4</div>
+        <img src="180913161629.jpg" style=width: 100%>
+    </div>
+    
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+    <script>
+    
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n)
+        {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n)
+        {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n)
+        {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dots");
+            if(n>slides.length)
+                {
+                    slideIndex = 1;
+                }
+            if(n<1)
+                {
+                    slideIndex = slides.length;
+                }
+            for(i=0;i<slides.length; i++)
+                {
+                    slides[i].style.display="none";
+                }
+            for(i=0; i < dots.length; i++)
+                {
+                    dots[i].className = dots[i].className.replace("active", "");
+                }
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += "active";
+        }
+        
+    </script>
+    
+    <div class="info">
+        <p class="bold"><b>TESLA</b></p><br>
+        <p class="story">
+           Tesla to delikatny i bardzo miły piesek. Niezwykle przyjazny do osób, które bardzo dobrze zna.  Jest chętny do zabawy, uwielbia psie gryzaki, ale ma też spokojniejszą stronę, kiedy leży na trawie i zaciekawiony obserwuje otoczenie. Tesla ma też charakterek, często nie chce wracać ze spaceru do swojego szarego boksu i nie paja sympatią do kotów. Tesla kiedyś mieszkał już w domu, przy właściwej osobie przypomni sobie co to kanapa, regularne spacery i wspierający człowiek, który już nigdy nie porzuci. Nasz Tesla ma stwierdzoną dysplazję stawów. Jest po operacji i być może kiedyś kondycja tylnych łapek ulegnie pogorszeniu, choć ciepły dom ze szczególnym dbaniem o łapy i opieką może spowodować, że problem będzie minimalny.   Ze względu na stan zdrowia sugerowany dom z ogrodem lub mieszkanie z windą, bez małych dzieci. 
+        </p>
+    </div>
+    <br><br>
+    <div class="przycisk">
+        <a class="button" href="./../../zasadyadopcji.html">ADOPTUJ!</a>
+    </div>
+   <br>
+    </body>
+</html>

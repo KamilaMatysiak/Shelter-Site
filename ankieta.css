@@ -1,0 +1,140 @@
+body {
+    background-color: aliceblue;
+}
+    
+
+.header {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;
+    padding 20px 10px;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.header-right a:hover{
+    background-color: #66ccff;
+    color: white;
+    text-shadow: 0 0 2px white;
+}
+
+.header a.active {
+    background-color: #66ccff;
+    color: floralwhite;
+    text-shadow: none;
+}
+
+.header-right {
+    padding:inherit;
+    margin-top: 45px;
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .header a.logo{
+        border-bottom: 2px solid  #66ccff;
+    }
+    
+    .header-right {
+        float: none;
+    }
+}
+
+.space {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px 2px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.ankieta{
+
+    margin-left: 10%;
+    width: 80%;
+}
+
+.pytanie {
+    
+    width: 80%;
+    margin-left: 10%;
+}
+
+.nag_ankieta {
+    text-align: center;
+}
+    
+.an_info {
+    text-align: center;
+    color: darkred;
+}
+
+.textbox {
+    background: #fff;
+    border: 1px solid gray;
+    border-radius: 40px;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: black;
+    font-size: 14px;
+    padding: 0 35px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    width: 50%;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+} 
+
+button {
+    background: #66ccff;
+    border-radius: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid ##4ba9d8;
+    box-shadow: none;
+    outline: none;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+    
+.trescpytania {
+    font-weight: 600;    
+}
+
+.wydruk {
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+    border-radius: 40px;
+}

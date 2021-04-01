@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="Stylesheet" href="./../../gallery.css">
+	<meta charset="utf-8">
+	<title>Strona Główna</title>
+</head> 
+ 
+<body>
+<div class="header">
+    <a href="./../../home.html" class="logo"><img src="./../../form/logo.png" alt="logo"></a>
+        <div class="header-right">
+            <a href="./../../home.html">HOME</a>
+            <a href="./../../psy.html">PSY</a>
+            <a href="./../../koty.html">KOTY</a>
+            <a href="./../../adoptowane.html">ADOPTOWANE</a>
+            <a href="./../../zasadyadopcji.html">ZASADY ADOPCJI</a>
+            <a href="./../../kontakt.html">KONTAKT</a>
+        </div>
+    </div>
+   
+    <br>
+    
+    <div class="slideshow-container">
+        
+    <div class="mySlides fade">
+        <div class="number">1/2</div>
+        <img src="cyntia%201.jpg"style=width: 100%>
+    </div>
+    
+     <div class="mySlides fade">
+        <div class="number">2/2</div>
+        <img src="cyntia2.jpg" style=width: 100%>
+    </div>
+        
+    <div class="mySlides fade">
+        <div class="number">2/2</div>
+        <img src="cyntia3.jpeg" style=width: 100%>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+    <script>
+    
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n)
+        {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n)
+        {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n)
+        {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dots");
+            if(n>slides.length)
+                {
+                    slideIndex = 1;
+                }
+            if(n<1)
+                {
+                    slideIndex = slides.length;
+                }
+            for(i=0;i<slides.length; i++)
+                {
+                    slides[i].style.display="none";
+                }
+            for(i=0; i < dots.length; i++)
+                {
+                    dots[i].className = dots[i].className.replace("active", "");
+                }
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += "active";
+        }
+        
+    </script>
+    
+    <div class="info">
+        <p class="bold"><b>CYNTIA</b></p><br>
+        <p class="story">
+            Szara, drobna Cyntia to 4-letnia koteczka, która na świat patrzy wystraszonymi oczkami. Nie rozumie sytuacji w jakiej się znalazła, schroniskowej klatki, obcego miejsca...  Koteczka miała dom, była przywiązana do osoby, która się nią opiekowała i do miejsca, które dobrze znała. Niestety właściciel zrzekł się kotki po pierwszych problemach z jej zachowaniem i tak koteczka trafiła do schroniska, bez wcześniejszej szansy na rozpoznanie problemu, który tak naprawdę mógł nie dotyczyć jej samej.
+
+Cyntia w schronisku najchętniej pozostałaby niewidzialna dla całego otoczenia, chowa się w najdalszym kącie salki i sama nie inicjuje kontaktu. Jest jednak sposób na zaciekawienie i ośmielenie koteczki - zabawa, której Cyntia chętnie się oddaje. Jej nowy opiekun będzie musiał zaopatrzyć się w solidną porcję zabawkowych myszek i wędek ;) 
+
+Cyntia będzie potrzebowała czasu, by zaufać nowemu właścicielowi, ale przy odpowiednim podejściu i zrozumieniu delikatnej natury kotki, przyszły opiekun zyska wspaniałego, kociego domownika. 
+        </p>
+    </div>
+    <br><br>
+    <div class="przycisk">
+        <a class="button" href="./../../zasadyadopcji.html">ADOPTUJ!</a>
+    </div>
+   <br>
+    </body>
+</html>

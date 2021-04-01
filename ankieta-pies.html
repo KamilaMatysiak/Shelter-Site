@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="Stylesheet" href="ankieta.css">
+	<meta charset="utf-8">
+	<title>Ankieta - pies</title>
+</head> 
+ 
+<body>
+<div class="header">
+    <a href="home.html" class="logo"><img src="form/logo.png" alt="logo"></a>
+        <div class="header-right">
+            <a class ="active" href="home.html">HOME</a>
+            <a href="psy.html">PSY</a>
+            <a href="koty.html">KOTY</a>
+            <a href="adoptowane.html">ADOPTOWANE</a>
+            <a href="zasadyadopcji.html">ZASADY ADOPCJI</a>
+            <a href="kontakt.html">KONTAKT</a>
+        </div>
+    </div>
+    
+<div class="space">    
+    <br>
+<h1 class="nag_ankieta">ANKIETA PRZEDADOPCYJNA: PIES</h1>
+<p class = "an_info"><b>UWAGA!</b> Wydruk poniższej ankiety należy dostarczyć do Biura ds. Adopcji!</p>
+
+<form action="wydruk.php">
+<div class = "ankieta">
+<div class = "pytanie">
+    <p class="trescpytania">1. Czy pies, którego chce Pan/i adoptować, to pies dla Pana/i 
+(i ewentualnie innych osób, z którymi Pan/i mieszka), czy też dla kogoś innego - 
+np. z rodziny - i będzie on mieszkał gdzieś indziej?
+</p>
+    <label>
+        <input type="radio" name="czyjpies" value="moj"> Psa adoptuję dla siebie i będzie mieszkał ze mną
+    </label>
+<br>
+    <label>
+        <input type="radio" name="czyjpies" value="niemoj"> Psa adoptuję dla kogoś innego i będzie mieszkał gdzie indziej
+    </label>
+    
+    <p class="an_info">Jeśli pies nie będzie mieszkał razem z panem/ią, proszę przekazać ankietę pracownikowi Biura ds. Adopcji. Zada on Panu/i kilka dodatkowych pytań. Jeśli zaś pies będzie mieszkał z Panem/ią, proszę przejść do kolejnych pytań.</p>
+
+</div>
+    
+    <div class = "pytanie">
+    <p class="trescpytania">2. Jakie jest Pana/i GŁÓWNE źródło utrzymania?
+</p>
+        
+        <input type="text" class="textbox" name="zrodloDochodow"><br>
+</div>
+    
+<div class = "pytanie">
+    <p class="trescpytania">3. Gdzie Pan/i mieszka?
+</p>
+    <label>
+        <input type="radio" name="miejscezam" value = "ogrod"> w domu z ogrodem/podwórkiem 
+    </label>
+<br>
+    <label>
+        <input type="radio" name="miejscezam" value="blok">w bloku/ kamienicy 
+    </label>
+<br>
+    
+    <label>
+       <input type="checkbox" name="miejscezam" value="inne" onclick="document.getElementById('identyfikator1').style.display = this.checked ? 'block' : 'none'; this.form.elements['miejscezamk'].disabled = !this.checked"> w innym miejscu, jakim? <br>  
+        <div id="identyfikator1" style="display: none">
+            <input type="text" class="textbox" name="miejscezamk"></div><br>
+            </label>
+</div>
+    
+<div class = "pytanie">
+    <p class="trescpytania">4. Kto jest właścicielem mieszkania lub
+domu, w którym Pan/i mieszka?
+
+</p>
+    <label>
+        <input type="radio" name="wlascicielmiesz" value="ja"> ja
+    </label>
+<br>
+    <label>
+        <input type="radio" name="wlascicielmiesz" value="nieja"> inna osoba, z którą mieszkam
+ 
+    </label>
+<br>
+        <label>
+         <input type="checkbox" name="wlascicielmiesz" value="inny" onclick="document.getElementById('identyfikator2').style.display = this.checked ? 'block' : 'none'; this.form.elements['wlascicielmieszk'].disabled = !this.checked"> 
+            ktoś inny, kto? <br> 
+            
+            <div id="identyfikator2" style="display: none">
+                <input type="text" class="textbox" name="wlascicielmieszk"></div>
+            <br>
+    </label>
+</div>
+    
+<div class = "pytanie">
+    <p class="trescpytania">5. Ile godzin w ciągu doby (MAKSYMALNIE) pies będzie zostawał sam w domu?: <br>
+        
+        <input class="textbox" type="text" name="samwdomu"><br>
+</div>
+    
+<div class = "pytanie">
+    <p class="trescpytania">6.  Gdzie będzie przebywał pies w ciągu całej doby? Możliwe, że przez część dnia pies będzie przebywał w domu z Panem/ią, część dnia będzie spędzał na terenie posesji luzem, czasem będzie np. zamykany w kojcu, a na chwilę będzie np. przywiązywany
+łańcuchem przy budzie. Proszę więc zaznaczyć WSZYSTKIE miejsca, gdzie pies będzie
+przebywał (nawet na krótko) w ciągu doby
+
+</p>
+    <label>
+        <input type="checkbox" name="ulokowanie1"> w domu
+
+    </label>
+<br>
+    <label>
+        <input type="checkbox" name="ulokowanie2"> na posesji luzem
+ 
+    </label>
+<br>
+    <label>
+        <input type="checkbox" name="ulokowanie3"> na posesji w budzie
+ 
+    </label>
+<br>
+    <label>
+        <input type="checkbox" name="ulokowanie4"> na posesji w kojcu
+ 
+    </label>
+<br>
+    <label>
+        <input type="checkbox" name="ulokowanie5"> na posesji na łańcuchu
+ 
+    </label>
+</div>
+    
+    <div class = "pytanie">
+    <p class="trescpytania"> 7. Czy ktoś z domowników ma
+uczulenie na sierść lub ślinę psa?
+
+</p>
+    <label>
+        <input type="radio" name="alergia" value="tak"> tak
+
+    </label>
+<br>
+    <label>
+        <input type="radio" name="alergia" value="nie"> nie
+ 
+    </label>
+<br>
+    <label>
+        <input type="radio" name="alergia" value="niewiem"> nie wiem
+ 
+    </label>
+    </div>
+    
+      <div class = "pytanie">
+    <p class="trescpytania"> 8. Co pozostali domownicy sądzą o pomyśle adoptowania psa ze schroniska?
+
+</p>
+    <label>
+        <input type="radio" name="zgodni" value="bardzo"> wszyscy domownicy są zgodni, że adopcja psa ze schroniska to dobry pomysł - to jest nasza wspólna decyzja
+
+    </label>
+<br>
+    <label>
+        <input type="radio" name="zgodni" value="niezbyt"> część domowników bardzo chce mieć psa adoptowanego ze schroniska, ale niektórzy nie są do końca przekonani do tego pomysłu
+ 
+    </label>
+    </div>
+    
+    <div class = "pytanie">
+    <p class="trescpytania"> 9. Czy kiedykolwiek w przeszłości lub obecnie posiada Pan/i psa (psy)?
+</p>
+    <label>
+        <input type="radio" name="inne" value="blabla"> tak
+    </label>
+<br>
+    <label>
+        <input type="radio" name="inne" value="bleble"> nie
+    </label>
+    </div>
+    
+    <div class = "pytanie">
+    <p class="trescpytania"> 10. Gdzie będzie przebywał pies w czasie Pana/i nieobecności (oraz innych domowników, jeśli nie mieszka Pan/i sam/a) - np. w czasie, gdy jest Pan/i w pracy?
+
+</p>
+    <input type="text" class="textbox" name="pieswychodzacy"><br>
+<br>
+    </div>
+    
+    
+   <button class="button" type="submit" name="generuj">GENERUJ</button>
+</div>
+</form>
+    </div>
+    
+</body>
+</html>

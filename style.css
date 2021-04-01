@@ -1,0 +1,317 @@
+body 
+{
+    background-color: aliceblue;
+    font-family: Verdana, sans-serif;
+}
+
+.header {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;
+    padding 20px 10px;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.header-right a:hover{
+    background-color: #66ccff;
+    color: white;
+    text-shadow: 0 0 2px white;
+}
+
+.header a.active {
+    background-color: #66ccff;
+    color: floralwhite;
+    text-shadow: none;
+}
+
+.header-right {
+    padding:inherit;
+    margin-top: 45px;
+    float: right;
+}
+
+.uwaga{
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+    color:red;
+}
+
+@media screen and (max-width: 600px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+        font-size: 30px;
+    }
+    
+    .header a.logo{
+        border-bottom: 2px solid  #66ccff;
+    }
+    
+    .header-right {
+        float: none;
+    }
+    
+    .banner {
+        width: 500px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    
+     .banner {
+        width: 800px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+.banner {
+        display: block;
+        margin: 0 auto;
+    }
+
+h1 {
+    text-align: center;
+}
+
+.hello{
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/* Galeria */
+
+.gallery{
+    margin: 0 auto;
+}
+
+* {box-sizing: border-box}
+
+
+/* Miniatury */
+.container {
+    position: relative;
+    max-width: 200px;  
+    margin: 5px;
+    float: left;
+    left: 0 auto;
+}
+
+.image {
+    display: block;
+    height: auto;
+}
+
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+/* JAK ADOPTOWAĆ */
+
+.naglowek {
+    margin-left: 50px;
+    font-size: 20px;
+    color: #66ccff;
+    font-weight: bold;
+    text-shadow: 1px 1px lightgray;
+}
+
+.naglowek2 {
+    text-align: center;
+    text-shadow: 1px 1px lightgray;
+    font-weight: bold;
+    font-size: 20px;
+    color: #66ccff;
+}
+
+.ad_info {
+    font-size: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ad_zal {
+    text-shadow: 1px 1px lightgray;
+    font-size: 13px;
+    color: #66ccff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.adopcja {
+    color: #66ccff;
+    text-shadow: 1px 1px grey;
+    text-align: center;
+    font-weight:900;
+    font-size: 30px;
+}
+
+.mapa {
+    float: left;
+    margin-bottom: 20px;
+
+}
+
+.space {
+    width: 80%;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.contact {
+    text-align: left;
+    float: left;
+    margin-left: 100px;
+}
+
+.info {
+    float: left;
+    width: 100%;
+    padding: 25px;
+}
+
+
+/* Formularz */
+
+.container2 {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.pagetitle
+{
+    width: 100%;
+    text-align: center;
+}
+
+.formtitle {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.form-sec {
+    width:650px;
+    text-align: center;
+    margin-top: 50px;
+}
+.poletext {
+    padding: 0;
+    margin: 0;
+    float: letf;
+    width: 300px;;
+}
+
+.poletext2 {
+    padding: 0;
+    margin: 0;
+    float: right;
+    width: 300px;;
+}
+
+.poletext3 {
+    padding: 0;
+    margin: 0;
+    float:none;
+    width: inherit;
+}
+
+.text-field-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: #666;
+    font-size: 14px;
+    padding: 0 35px;
+    margin-bottom: 30px;
+    width: 100%;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.form-sec textarea {
+    height: 220px;
+    width: 620px;
+
+}
+
+.button-medium {
+    background: #66ccff;
+    border-radius: 40px;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid ##4ba9d8;
+    box-shadow: none;
+    outline: none;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.przyciski {
+    width: 500px;
+    text-align: center;
+}
+
+.przycisk1 {
+    float: left;
+}
+
+przycisk2 {
+    float: right;
+}
+
+.enter {
+    clear: both;
+}

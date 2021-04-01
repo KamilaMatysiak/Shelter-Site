@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="Stylesheet" href="./../../gallery.css">
+	<meta charset="utf-8">
+	<title>Strona Główna</title>
+</head> 
+ 
+<body>
+<div class="header">
+    <a href="./../../home.html" class="logo"><img src="./../../form/logo.png" alt="logo"></a>
+        <div class="header-right">
+            <a href="./../../home.html">HOME</a>
+            <a href="./../../psy.html">PSY</a>
+            <a href="./../../koty.html">KOTY</a>
+            <a href="./../../adoptowane.html">ADOPTOWANE</a>
+            <a href="./../../zasadyadopcji.html">ZASADY ADOPCJI</a>
+            <a href="./../../kontakt.html">KONTAKT</a>
+        </div>
+    </div>
+   
+    <br>
+    
+    <div class="slideshow-container">
+        
+    <div class="mySlides fade">
+        <div class="number">1/2</div>
+        <img src="dog1.jpg" style=width: 100%>
+    </div>
+    
+     <div class="mySlides fade">
+        <div class="number">2/2</div>
+        <img src="dog1_2.jpg" style=width: 100%>
+    </div>
+        
+    <div class="mySlides fade">
+        <div class="number">2/2</div>
+        <img src="max3.jpg" style=width: 100%>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+    <script>
+    
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n)
+        {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n)
+        {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n)
+        {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dots");
+            if(n>slides.length)
+                {
+                    slideIndex = 1;
+                }
+            if(n<1)
+                {
+                    slideIndex = slides.length;
+                }
+            for(i=0;i<slides.length; i++)
+                {
+                    slides[i].style.display="none";
+                }
+            for(i=0; i < dots.length; i++)
+                {
+                    dots[i].className = dots[i].className.replace("active", "");
+                }
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += "active";
+        }
+        
+    </script>
+    
+    <div class="info">
+        <p class="bold"><b>MAX</b></p><br>
+        <p class="story">
+            Max ma swoje, bardzo złe zdanie na temat schroniska! 
+Nie podoba mu się, że tu jest. Owszem jak już trzeba, to Jaśnie Pan pozwoli na chwilę głasków, nawet zastrzyk da sobie zrobić! Jednak Max wciąż troszkę boi się ludzi. Jest za to bardzo zainteresowany psimi towarzyszami niedoli. Chętnie bawi się z koleżankami i ma też dobre relacje z psami. Max sprawia wrażenie psa dość energicznego i sądzimy też, że w przyszłości będzie bardzo radosny i skory do zabaw. Niestety w schronisku wciąż jest trochę zamknięty w sobie i pomimo naszych starań nie potrafimy się przebić przez tą jego skorupkę. A przecież widzimy, jaki jest samotny!
+
+Praca z nieufnym psem w schronisku jest bardzo trudna. Byłoby dużo lepiej by Max szybko znalazł się w domu z cierpliwymi i wrażliwymi ludżmi gotowymi na wyzwanie jakim jest pokazanie temu naszemu cukierkowi lepszego życia. Na obecnym etapie powinien to być dom w spokojnej okolicy. Towarzystwo przyjaznej suczki na pewno byłoby pomocne. 
+        </p>
+    </div>
+    <br><br>
+    <div class="przycisk">
+        <a class="button" href="./../../zasadyadopcji.html">ADOPTUJ!</a>
+    </div>
+   <br>
+    </body>
+</html>
